@@ -6,9 +6,6 @@ private String marque;
 private double prix;
 private String entreprise="protech";
 private String couleur,carburant;
-
-
-
 public String getMarque() {
 	return marque;
 }
@@ -39,22 +36,17 @@ public String getCarburant() {
 public void setCarburant(String carburant) {
 	this.carburant = carburant;
 }
+
 public Voiture(String marque, double prix, String couleur, String carburant) {
-	
+	super();
 	this.marque = marque;
 	this.prix = prix;
 	this.couleur = couleur;
 	this.carburant = carburant;
 }
 public Voiture() {
-	// TODO Auto-generated constructor stub
-	System.out.println("ici c'est le constructeur sans paramétres");
+	super();
 }
-@Override
-public String toString() {
-	return "Voiture [marque=" + marque + ", prix=" + prix + ", couleur=" + couleur + ", carburant=" + carburant + "]";
-}
-
 
 
 
