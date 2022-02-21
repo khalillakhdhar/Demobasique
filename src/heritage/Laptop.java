@@ -15,4 +15,14 @@ public Laptop(String marque, String processeur, int ram, int disque, double prix
 	super(marque, processeur, ram, disque, prix);
 	this.autonomie = autonomie;
 }
+
+@Override
+public String toString() {
+	return "Laptop [autonomie=" + autonomie + ", Ordinateur=" + super.toString() + "]";
+}
+
+
+
+
+
 }
